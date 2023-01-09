@@ -1,0 +1,93 @@
+{
+  "name": "FeatureCarousel",
+  "coreModelsPath": "core/main/components/models",
+  "coreModelsTestPath": "core/main/test/components/models",
+  "appComponentPath": "app/main/components/horizon",
+  "coreJsonModelsPath": "app/main/components/horizon",
+  "sections": [
+    {
+      "name": "Settings",
+      "inputs": [
+        {
+          "name": "name",
+          "dataTypeName": "String",
+          "variables": null,
+          "dialogProperties": [
+            {
+              "name": "jcr:primaryType",
+              "value": "nt:unstructured"
+            },
+            {
+              "name": "sling:resourceType",
+              "value": "granite/ui/components/coral/foundation/form/textField"
+            },
+            {
+              "name": "fieldLabel",
+              "value": "Name"
+            },
+            {
+              "name": "required",
+              "value": "{Boolean}true"
+            },
+            {
+              "name": "name",
+              "value": "./name"
+            }
+          ]
+        },
+        {
+          "name": "address",
+          "dataTypeName": "FeatureCarouselAddress",
+          "variables": [
+            {
+              "name": "city",
+              "dataTypeName": "String",
+              "variables": null,
+              "dialogProperties": [
+                {
+                  "name": "jcr:primaryType",
+                  "value": "nt:unstructured"
+                },
+                {
+                  "name": "sling:resourceType",
+                  "value": "granite/ui/components/coral/foundation/form/textField"
+                },
+                {
+                  "name": "fieldLabel",
+                  "value": "Name"
+                },
+                {
+                  "name": "required",
+                  "value": "{Boolean}true"
+                },
+                {
+                  "name": "name",
+                  "value": "./name"
+                }
+              ]
+            }
+          ],
+          "dialogProperties": [
+            {
+              "name": "jcr:primaryType",
+              "value": "nt:unstructured"
+            },
+            {
+              "name": "sling:resourceType",
+              "value": "granite/ui/components/coral/foundation/form/textField"
+            },
+            {
+              "name": "fieldLabel",
+              "value": "Name"
+            },
+            {
+              "name": "name",
+              "value": "./address"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
